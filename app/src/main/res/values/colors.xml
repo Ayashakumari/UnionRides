@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4099FF</color>
+    <color name="colorPrimaryDark">#4099FF</color>
+    <color name="colorAccent">#000</color>
+    <color name="ble_blck">#0D1016</color>
+    <color name="login">#2C2614</color>
+    <color name="ble_txt">#4099FF</color>
+    <color name="app_Colour">#F75626</color>
+    <color name="white">#FFFFFF</color>
+    <color name="slati">#a8000000</color>
+    <color name="app_red">#B92022</color>
+
+    <color name="yellow">#FFFF00</color>
+    <color name="light_app_red">#FFFCA186</color>
+    <color name="darkblu">#075D95</color>
+    <color name="header_green">#3CBFA8</color>
+    <color name="blu">#006AB3</color>
+    <color name="main_green">#00FF00</color>
+    <color name="busy_grey">#D5D4D0</color>
+    <color name="Transparent">#77000000</color>
+    <color name="transparent_color">#00000000</color>
+    <color name="dark_grey">#808080</color>
+    <color name="background">#A6A8A9</color>
+    <color name="black_less">#7C7D78</color>
+    <color name="black_gunmetal">#3F3F3F</color>
+    <color name="dark_black">#212121</color>
+    <color name="black">#000000</color>
+    <color name="navy_blue">#002393</color>
+    <color name="medium_red">#BB2B4C</color>
+    <color name="pink_light">#e16b77</color>
+    <color name="pink">#ee7584</color>
+    <color name="medium_voilet_red">#C71585</color>
+    <color name="Gray">#e3e3e3</color>
+    <color name="light_Gray1">#F5F5F5</color>
+    <color name="extra_green">#339966</color>
+    <color name="light_Yellow">#FFB804</color>
+    <color name="light_slightYellow">#FFBF09</color>
+    <color name="header_txt_blue">#3C9CDE</color>
+    <color name="yellow_green">#CFE100</color>
+
+    <color name="Yellow">#ffffe1</color>
+    <color name="Less_Black">#8d8d8d</color>
+    <color name="LightBlack">#2a3739</color>
+    <color name="Dark_Gray">#676767</color>
+    <color name="Black">#000000</color>
+    <color name="White">#ffffff</color>
+    <color name="Ghost_White">#F8F8FF</color>
+    <color name="Light_Gray">#D5D9DC</color>
+    <color name="blueee">#3C98C6</color>
+
+    <color name="Light_Gray_white">#F4F4EF</color>
+
+    <color name="grey_white">#A8ACB7</color>
+    <color name="light_black1">#6E7482</color>
+    <color name="sky_blue">#7CD1FA</color>
+    <color name="Slight_Blue">#00BFFF</color>
+    <color name="dark_Blue">#457FBD</color>
+
+    <color name="brown">#F6AF15</color>
+    <color name="Background">#fbfbfa</color>
+    <color name="Light_Blue">#70b5eb</color>
+    <color name="Light_Orange">#ff677e</color>
+    <color name="Light_Purple">#d1a5d8</color>
+    <color name="Green">#32af00</color>
+    <color name="Dark_green">#22901D</color>
+    <color name="greenslight">#01C4AF</color>
+    <color name="Apartement_header">#31B5FD</color>
+    <color name="green_dark">#C3E100</color>
+
+    <color name="sky_Green">#01C4AF</color>
+    <color name="Light_Green">#80fde0</color>
+    <color name="Orange">#f26522</color>
+
+    <color name="Red">#FF0000</color>
+    <color name="darkRed">#990000</color>
+
+    <color name="red_shine">#DA206B</color>
+    <color name="PrimaryPressed">#e2dcdc</color>
+    <color name="primaryFocused">#ffffff</color>
+    <color name="primarycolour">#ffffff</color>
+    <color name="violet">#c073e0</color>
+    <color name="slati_black">#DCDCDC</color>
+    <color name="violet_light">#ca94e0</color>
+    <color name="app_background">#e6e7e6</color>
+    <color name="Grey_color">#999999</color>
+    <color name="White_smoke">#F7F5F6</color>
+    <color name="red_app">#e76263</color>
+    <color name="red_app_opacity">#e762638c</color>
+    <color name="Saddlebrown">#8B4513</color>
+    <color name="lightwhite">#B3B8BE</color>
+    <color name="Lightblack">#656364</color>
+    <color name="Blue">#1673FF</color>
+    <color name="dark_blue">#026096</color>
+    <color name="State_Blue">#6A5ACD</color>
+    <color name="Sky_blue">#31B5FD</color>
+    <color name="deep_Sky_blue">#00BFFF</color>
+    <color name="More_Green">#32CD32</color>
+    <color name="piink">#FF4081</color>
+    <item name="calender_theme" type="color">#2D84C5</item>
+    <item name="purple" type="color">#FFAA66CC</item>
+    <item name="green" type="color">#6FB524</item>
+    <item name="orange" type="color">#FFFFBB33</item>
+    <item name="red" type="color">#FFFF4444</item>
+    <item name="darkblue" type="color">#FF0099CC</item>
+    <item name="darkpurple" type="color">#FF9933CC</item>
+    <item name="darkgreen" type="color">#FF669900</item>
+    <item name="darkorange" type="color">#FFFF8800</item>
+    <item name="darkred" type="color">#FFCC0000</item>
+    <color name="lightblue">#0696EA</color>
+    <item name="transparent" type="color">#00FFFFFF</item>
+    <color name="symptom_color_selected">#003366</color>
+    <color name="reaction_color_selected">#003366</color>
+    <color name="static_text_color">#003366</color>
+    <color name="journal_entry_listitem_text_color">#003366</color>
+    <color name="note_text_disabled">#333333</color>
+    <color name="blue">#0000FF</color>
+    <color name="navy">#6699FF</color>
+    <color name="sky">#0099CC</color>
+    <color name="gray">#808080</color>
+    <color name="lightgray">#e7e7e7</color>
+    <color name="lightgray02">#bfbfbf</color>
+    <color name="dark">#000015</color>
+    <color name="lightgreen">#336666</color>
+    <color name="orrange">#e33d1b</color>
+    <color name="darkorrange">#cc2303</color>
+    <color name="radio">#10123A</color>
+    <integer-array name="androidcolors" />
+    <color name="lightgrey1">#EEEEEE</color>
+
+
+</resources>

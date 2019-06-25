@@ -1,0 +1,101 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f9f5f5"
+    tools:context="mx.bigapps.unionrides.Fragment.VideoRides">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_gravity="center"
+
+            >
+
+            <RelativeLayout
+                android:id="@+id/videolayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+
+                >
+
+
+                <mx.bigapps.unionrides.Activity.SquareImageView
+                    android:id="@+id/images"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY" />
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/photolist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/images"
+                    android:divider="@color/gray"
+                    app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                    app:reverseLayout="false" />
+
+
+                <!-- <android.support.v7.widget.RecyclerView
+                     android:id="@+id/photolist"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_below="@+id/images"
+                     android:layout_marginTop="10dp"
+                     android:divider="@color/transparent"
+                     android:orientation="horizontal"
+                     app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                     app:reverseLayout="true"
+                     android:layout_marginBottom="10dp"/>-->
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/videolayout"
+                android:layout_marginTop="10dp"
+
+                android:orientation="vertical"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+
+                >
+
+                <TextView
+                    android:id="@+id/error"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    android:text="No award found for this ride "
+                    android:textColor="#000000"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    />
+
+                <Button
+                    android:id="@+id/addaward"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/purple_rect"
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:paddingTop="4dp"
+                    android:text="+Add Award"
+                    android:textColor="@color/White"
+                    android:textSize="10dp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</FrameLayout>

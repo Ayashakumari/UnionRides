@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mx.bigapps.unionrides.Activity.Rides">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Activity.Rides">
+
+        <include
+            android:id="@+id/header"
+            layout="@layout/header" />
+
+        <com.flyco.tablayout.SlidingTabLayout
+            android:id="@+id/tl_2"
+            android:layout_width="match_parent"
+
+            android:layout_height="30dp"
+            android:layout_marginTop="40dp"
+            android:background="@color/colorPrimary"
+            app:tl_indicator_margin_bottom="5dp"
+            tl:tl_divider_color="#1A000000"
+            tl:tl_divider_padding="13dp"
+            tl:tl_divider_width="1dp"
+            tl:tl_indicator_color="@android:color/white"
+            tl:tl_indicator_height="1.5dp"
+            tl:tl_indicator_width_equal_title="true"
+            tl:tl_tab_space_equal="true"
+            tl:tl_textSelectColor="@color/White"
+            tl:tl_textUnselectColor="@color/white"
+            tl:tl_underline_color="@color/White"
+            tl:tl_underline_height="1dp" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_marginTop="74dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone">
+
+            <include
+                android:id="@+id/home_toolbar"
+                layout="@layout/toolbar" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/White"
+    android:minHeight="50dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/brand_txt"
+    android:layout_centerVertical="true"
+    android:textColor="#000000"
+    android:text="Brand NAME"
+    android:layout_marginLeft="10dp"
+    android:textSize="17sp"
+    android:textStyle="bold"
+    />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"
+        android:layout_alignParentBottom="true"
+
+        />
+    </RelativeLayout>
+</LinearLayout>

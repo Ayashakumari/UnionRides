@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/black">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/user_image"
+            android:src="@drawable/default_user"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/user_image"
+            android:text="Allen Kneth"
+            android:textSize="10sp"
+            android:textColor="@color/white"
+            android:id="@+id/allen_kneth"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/user_image"
+            android:layout_below="@+id/allen_kneth"
+            android:text="Nice car"
+            android:textSize="10sp"
+            android:textColor="@color/white"
+            android:id="@+id/nice_car"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2 mins ago"
+            android:id="@+id/two_minutes"
+            android:textColor="@color/white"
+            android:layout_toRightOf="@+id/user_image"
+            android:layout_below="@+id/nice_car"
+            android:textSize="10sp"/>
+
+    </RelativeLayout>
+    <View
+        android:layout_width="330dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/gray">
+
+    </View>
+</LinearLayout>

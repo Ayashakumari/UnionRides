@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:paddingBottom="2dp"
+    android:paddingLeft="2dp"
+    android:paddingTop="2dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/lvStoreList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginBottom="3dp">
+
+
+            <RelativeLayout
+                android:id="@+id/badge_layout1"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:gravity="center">
+
+                <RelativeLayout
+                    android:id="@+id/relative_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imgEvent"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/border"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/images2" />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+
+                    >
+
+                    <LinearLayout
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <!-- <TextView
+                             android:id="@+id/eventName"
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:layout_marginLeft="8dp"
+
+                             android:paddingLeft="3sp"
+
+                             android:text="Award Name"
+                             android:textColor="@color/Black"
+                             android:textSize="18sp"
+                             android:textStyle="normal" />-->
+
+                        <TextView
+                            android:id="@+id/awardname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:paddingBottom="4dp"
+                            android:text="award name"
+                            android:textColor="@color/Black"
+                            android:textSize="15sp" />
+
+                        <!-- <TextView
+                             android:id="@+id/date"
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:layout_marginLeft="8dp"
+
+                             android:paddingLeft="3sp"
+                             android:text="Award Date"
+                             android:textColor="@color/Black"
+                             android:textSize="18sp"
+                             android:textStyle="normal" />-->
+
+                        <TextView
+                            android:id="@+id/awarddate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:paddingBottom="4dp"
+                            android:text="award name"
+                            android:textColor="@color/Black"
+                            android:textSize="15sp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/edit_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="right"
+
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/evntedit"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginRight="5dp"
+                            android:src="@drawable/bt_edit" />
+
+                        <ImageView
+                            android:id="@+id/evntdelete"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="5dp"
+                            android:gravity="right"
+                            android:src="@drawable/bt_delete" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="5dp"
+        android:background="@color/gray" />
+
+
+</RelativeLayout>

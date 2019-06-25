@@ -1,0 +1,88 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:background="#D7D9DA"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#D7D9DA"
+            android:orientation="vertical"
+
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/colorPrimary">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="Chats"
+                        android:textColor="@color/White"
+                        android:textSize="20dp" />
+
+
+                    <ImageView
+                        android:id="@+id/add"
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+
+                        android:src="@drawable/headerplusbutton" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!--  <android.support.v7.widget.RecyclerView
+                  android:id="@+id/chat_recycle"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent" />-->
+            <com.baoyz.swipemenulistview.SwipeMenuListView
+                android:id="@+id/chat_recycle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/error_msg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="No Chats appointed yet."
+            android:textColor="@color/Black"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:visibility="gone"
+
+
+            />
+    </LinearLayout>
+
+</LinearLayout>
+
+

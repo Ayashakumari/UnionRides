@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="mx.bigapps.unionrides">
+
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="__APILEVEL__" />
+
+    <permission
+        android:name="mx.bigapps.unionrides.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <permission
+        android:name="mx.bigapps.unionrides.permission.CAMERA"
+        android:protectionLevel="signature" />
+    <permission
+        android:name="mx.bigapps.unionrides.permission.READ_EXTERNAL_STORAGE"
+        android:protectionLevel="signature" />
+    <permission
+        android:name="mx.bigapps.unionrides.permission.WRITE_EXTERNAL_STORAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="mx.bigapps.unionrides.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.koment.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <supports-screens
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:name=".Application.AppController"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/appicon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Activity.Splash_Screen"
+            android:theme="@style/AppThemeSpalsh">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <service android:name=".MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".FirebaseIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".Activity.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Activity.Select_Car_Brand"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Activity.Welcome"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Activity.MemberLogin"
+            android:screenOrientation="portrait"
+            android:theme="@style/Applogin"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Activity.CreateAccount"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeEvent"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Activity.Wall"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Activity.Rides"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeEvent" />
+        <activity
+            android:name=".Activity.PublicProfile"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeEvent"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Activity.GetLocationMap"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activity.MyProfile"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme3"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Activity.MapView_Activity"
+            android:theme="@style/AppTheme3" />
+        <activity
+            android:name=".Activity.PublicProfileEvents"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Activity.Search"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activity.Account_Setting"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeEvent"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Activity.Change_password"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeEvent"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Activity.Chat_window"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeEvent"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Activity.Add_specification"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeEvent" />
+        <activity android:name=".Activity.Settings" />
+        <activity
+            android:name=".Activity.Add_Events"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeEvent" />
+        <activity
+            android:name=".Activity.Edit_Events"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeEvent" />
+        <activity
+            android:name=".Activity.Add_Award"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeEvent" />
+        <activity
+            android:name=".Activity.Reset_password"
+            android:theme="@style/Applogin" />
+        <activity
+            android:name=".Activity.EventsMain"
+            android:theme="@style/AppThemeEvent" />
+        <activity
+            android:name="com.soundcloud.android.crop.CropImageActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.soundcloud.android.crop.CropImageActivityRide"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".Activity.FollowingList"
+            android:theme="@style/AppThemeEvent" />
+        <activity
+            android:name=".Activity.FriendList"
+            android:theme="@style/AppThemeEvent" />
+        <activity
+            android:name=".Activity.Add_Comment"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activity.PostPreviewimage"
+            android:configChanges="orientation|keyboardHidden|screenLayout|screenSize"
+            android:theme="@style/AppThemeEvent" />
+        <activity
+            android:name=".Activity.RidesFragmnts"
+            android:theme="@style/AppTheme3" />
+        <activity
+            android:name=".Activity.PreviewIamge"
+            android:theme="@style/Applogin" />
+        <activity
+            android:name=".Activity.MapView_Activity"
+            android:theme="@style/AppTheme3" />
+        <activity android:name=".Activity.Terms" />
+        <activity
+            android:name=".Activity.Web"
+            android:theme="@style/AppTheme3" />
+        <activity
+            android:name=".Activity.Videoview"
+            android:hardwareAccelerated="true"
+            android:theme="@style/VideoView" />
+        <activity
+            android:name=".Activity.Sponserview"
+            android:hardwareAccelerated="false"
+            android:theme="@style/VideoView" />
+        <activity
+            android:name=".Activity.AllcontactList"
+            android:theme="@style/AppTheme3" />
+        <activity android:name=".Activity.BlockList" />
+        <!--
+              <meta-data
+              android:name="io.fabric.ApiKey"
+              android:value="3842ba144829b721a2c8a5f71102edb4c3f88992" />
+        -->
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="3842ba144829b721a2c8a5f71102edb4c3f88992" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAZ6Gqdwkc8_GipL2OuuBoupOSxvcSbPdQ" />
+
+        <activity android:name=".Activity.Verification" />
+
+        <receiver
+            android:name="com.google.android.gcm.GCMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+
+                <!-- Receives the actual messages. -->
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <!-- Receives the registration id. -->
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.KimiacarePatient" />
+            </intent-filter>
+        </receiver>
+
+        <!-- <service android:name=".GCMIntentService" /> -->
+
+        <activity android:name=".Activity.Gridviewpostpereveiw" />
+        <!--<activity android:name=".Activity.Rides3_Activity" />-->
+        <activity android:name=".Activity.Preview_firstride"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" >
+
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,199 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D7D9DA"
+    tools:context=".Activity.RidesFragmnts">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/header" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="40dp"
+        >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="25dp"
+            android:id="@+id/scroll_view"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <!--<mx.bigapps.unionrides.Activity.ExpandableHeightGridView-->
+                        <!--android:id="@+id/photolist"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:background="@color/transparent"-->
+                        <!--android:numColumns="1"-->
+                        <!--android:smoothScrollbar="true"-->
+                        <!--android:layout_marginBottom="80dp"-->
+                        <!--android:stretchMode="columnWidth"-->
+                        <!--android:verticalSpacing="4dp">-->
+                    <!--</mx.bigapps.unionrides.Activity.ExpandableHeightGridView>vity.ExpandableHeightGridView>-->
+
+                    <android.support.v7.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/transparent"
+                        android:layout_marginBottom="80dp"
+                        android:id="@+id/recylist"
+                        android:paddingBottom="5dp"
+
+                        >
+
+                    </android.support.v7.widget.RecyclerView>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:background="@drawable/purple_rect"
+                        android:paddingLeft="30dp"
+                        android:paddingRight="30dp"
+                        android:text=" + Add Rides"
+                        android:textColor="@color/White"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_marginBottom="20dp"
+                        android:id="@+id/addRides"
+                        android:visibility="gone"
+                        android:layout_marginTop="420dp"
+                        android:layout_marginLeft="120dp"
+                        />
+                    <ImageView
+                        android:id="@+id/result_image"
+                        android:layout_width="400dp"
+                        android:layout_height="400dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/texture"
+                        android:scaleType="fitXY"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="80dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="100dp"
+
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Select Your Main Photos by click star icon underneath it"
+                        android:textStyle="bold"
+                        android:id="@+id/msg_select"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textAllCaps="true"
+                        android:textSize="11dp"
+                        android:visibility="gone"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:textColor="#000000"
+                        android:id="@+id/error"
+                        android:visibility="gone"
+                        android:textSize="20sp"
+                        android:layout_marginTop="20dp"
+                        android:textStyle="bold"
+                        android:text="No Ride Pic Found"
+                        android:gravity="center"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+        </ScrollView>
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:id="@+id/rr1"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+
+                android:background="@color/colorPrimaryDark"
+                >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MY 1ST RIDES"
+                    android:layout_centerVertical="true"
+                    android:textSize="13sp"
+                    android:id="@+id/first_ride"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="30dp"/>
+
+                <View
+                    android:layout_width="85dp"
+                    android:layout_height="1dp"
+                    android:visibility="gone"
+                    android:layout_below="@+id/first_ride"
+                    android:id="@+id/view_one"
+                    android:background="@color/white"
+                    android:layout_marginLeft="30dp"/>
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MY NEXT RIDE"
+                    android:textColor="@color/white"
+                    android:layout_marginRight="30dp"
+                    android:layout_centerVertical="true"
+                    android:textSize="13sp"
+                    android:id="@+id/last_ride"
+                    android:layout_alignParentRight="true"
+
+                    />
+                <View
+                    android:layout_width="85dp"
+                    android:layout_height="1dp"
+                    android:visibility="gone"
+                    android:id="@+id/view_two"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="30dp"
+                    android:layout_below="@+id/last_ride"
+                    android:background="@color/white"
+                    android:layout_marginLeft="30dp"/>
+
+
+            </RelativeLayout>
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/header_ride"
+                android:id="@+id/image_rider"/>
+
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

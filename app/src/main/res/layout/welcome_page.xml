@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_bg"
+    android:orientation="vertical">
+
+
+    <ImageView
+
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/logo" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+
+        >
+
+
+        <TextView
+            android:id="@+id/welcome_createAcct"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/white_rect"
+            android:gravity="center"
+            android:text="Create Account"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/welcome_login"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/white_rect"
+            android:gravity="center"
+            android:text="Member Login"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

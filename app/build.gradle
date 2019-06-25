@@ -1,0 +1,133 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        // These docs use an open ended version so that our plugin
+        // can be updated quickly in response to Android tooling updates
+
+        // We recommend changing it to the latest version from our changelog:
+        // https://docs.fabric.io/android/changelog.html#fabric-gradle-plugin
+        //classpath 'io.fabric.tools:gradle:1.+'
+        classpath 'io.fabric.tools:gradle:1.22.2'
+    }
+}
+
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+}
+android {
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
+
+    defaultConfig {
+        applicationId "mx.bigapps.unionrides"
+        minSdkVersion 16
+        targetSdkVersion 27
+        versionCode 19
+        versionName "3.7"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    aaptOptions {
+        cruncherEnabled = false
+    }
+    defaultConfig {
+        multiDexEnabled true
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+
+}
+repositories {
+    jcenter()
+}
+repositories {
+    Library
+}
+repositories {
+    mavenCentral()
+}
+repositories {
+    mavenCentral()
+    mavenLocal()
+}
+
+repositories {
+    maven { url 'https://jitpack.io' }
+}
+dependencies {
+    implementation 'com.android.support.constraint:constraint-layout:1.1.1'
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+
+
+    implementation 'com.android.support:support-v4:27.1.0'
+    implementation 'com.android.support:appcompat-v7:27.1.0'
+    implementation 'com.android.support:recyclerview-v7:27.1.0'
+    implementation 'com.android.support:design:27.1.0'
+    implementation 'com.android.volley:volley:1.0.0'
+    implementation 'com.android.support:multidex:1.0.1'
+    implementation 'net.bohush.geometricprogressview:geometricprogressview:1.1.1'
+    implementation 'com.tubitv.ui:tubi-loading-view:0.0.4@aar'
+    implementation 'de.hdodenhof:circleimageview:2.0.0'
+    implementation 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'
+    implementation 'com.github.siyamed:android-shape-imageview:0.9.+@aar'
+
+    implementation 'com.google.android.gms:play-services-location:11.0.4'
+    implementation 'com.android.volley:volley:1.0.0'
+    implementation 'com.google.android.gms:play-services-maps:11.0.4'
+
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation files('libs/gcm.jar')
+    implementation files('libs/httpclient-4.3.2.jar')
+    implementation files('libs/httpcore-4.3.1.jar')
+    implementation files('libs/httpmime-4.3.2.jar')
+    implementation files('libs/devsmartlib.jar')
+    implementation files('libs/jiecaovideoplayer-3.0_preview-javadoc.jar')
+    implementation files('libs/jiecaovideoplayer-3.0_preview-sources.jar')
+    implementation files('libs/universal-image-loader-1.9.2.jar')
+    implementation files('libs/urlimageviewhelper-1.0.4.jar')
+    //  compile 'com.github.marcinmoskala:VideoPlayView:0.0.2'
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    implementation 'com.baoyz.swipemenulistview:library:1.3.0'
+    implementation 'in.srain.cube:grid-view-with-header-footer:1.0.12'
+    implementation 'com.github.halilozercan:BetterVideoPlayer:1.1.0'
+    implementation 'com.google.firebase:firebase-core:8.4.0'
+    compile 'com.google.android.gms:play-services-auth:11.0.4'
+
+    implementation 'com.squareup.retrofit2:converter-gson:2.0.2'
+
+    implementation 'com.google.android.gms:play-services:11.0.4'
+    implementation 'com.google.firebase:firebase-messaging:11.0.4'
+    implementation project(':jCFullScreenActivity')
+    implementation project(':lib')
+    implementation('com.crashlytics.sdk.android:crashlytics:2.6.8@aar') {
+        transitive = true;
+    }
+
+}
+apply plugin: 'com.google.gms.google-services'

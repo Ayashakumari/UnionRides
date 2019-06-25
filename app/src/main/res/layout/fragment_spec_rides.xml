@@ -1,0 +1,273 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mx.bigapps.unionrides.Fragment.VideoRides">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+
+        <mx.bigapps.unionrides.Activity.SquareImageView
+            android:id="@+id/photos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:scaleType="fitXY" />
+
+
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/container_video"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black_gunmetal">
+
+            <RelativeLayout
+                android:id="@+id/container_1st"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+
+                <LinearLayout
+                    android:id="@+id/brand_name_layout"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/brand_name_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Brand Name"
+                        android:textColor="@color/White"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@+id/brand_name_layout"
+                    android:layout_toLeftOf="@+id/year_layout"
+                    android:layout_toRightOf="@+id/brand_name_layout"
+                    android:layout_toStartOf="@+id/year_layout"
+                    android:gravity="left"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/model_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Brand Name:"
+                        android:textColor="@color/White"
+                        android:textSize="14sp"
+                        android:layout_marginLeft="10dp"
+
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/year_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/year_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Brand Name"
+                        android:textColor="@color/White"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/container_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/container_1st"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp">
+
+                <LinearLayout
+                    android:id="@+id/color_layout"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/color_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Brand Name"
+                        android:textColor="@color/White"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/color_layout"
+                    android:layout_toLeftOf="@+id/torque_layout"
+                    android:layout_toRightOf="@+id/color_layout"
+                    android:layout_toStartOf="@+id/torque_layout"
+                    android:gravity="left"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/hp_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginRight="5dp"
+                        android:text="Brand Name:"
+                        android:textColor="@color/White"
+                        android:textSize="14sp"
+                        android:layout_marginLeft="10dp"
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/torque_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/torque_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Brand Name"
+                        android:textColor="@color/White"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/container_3"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/container_2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp">
+
+                <LinearLayout
+                    android:id="@+id/speed_layout"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/speed_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Brand Name"
+                        android:textColor="@color/White"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/price_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/speed_layout"
+
+                    android:layout_toRightOf="@+id/speed_layout"
+
+                    android:gravity="left"
+
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/price_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Brand Name"
+                        android:textColor="@color/White"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/videolayout"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="vertical"
+
+            >
+            <TextView
+                android:id="@+id/error"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="No Specification Found For This Ride"
+                android:textColor="#000000"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="20dp"
+                 />
+
+            <Button
+                android:id="@+id/addspecification"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:background="@drawable/purple_rect"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:text="Add SPECIFICATION"
+                android:textColor="@color/White"
+
+                />
+            <Button
+                android:id="@+id/deletespecification"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:background="@drawable/purple_rect"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:text="Delete SPECIFICATION"
+                android:textColor="@color/White"
+                android:layout_marginTop="10dp"
+
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

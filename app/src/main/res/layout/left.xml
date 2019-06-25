@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/chat_rect">
+
+    <TextView
+        android:id="@+id/msgr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="20dp"
+        android:paddingBottom="8dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:text="Sampleleft"
+        android:textSize="18sp"
+        android:textColor="#000" />
+    <TextView
+        android:id="@+id/minute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/msgr"
+        android:layout_marginLeft="-10dp"
+        android:layout_marginTop="10dp"
+        />
+</RelativeLayout>

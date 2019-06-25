@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relative_response"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/Black"
+            android:textSize="12sp"
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            android:text="This is an auto response from your doctor"/>
+        <TextView
+            android:id="@+id/date_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="10dp"
+            android:visibility="gone"
+            android:text="Date"
+            android:background="@drawable/white_rectangle"
+            android:textColor="@color/Black"
+            android:textSize="15sp" />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/relative_txt"
+        android:layout_below="@+id/relative_response"
+        >
+        <RelativeLayout
+            android:id="@+id/send_relative"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+
+            android:layout_marginBottom="8dp"
+            android:layout_height="wrap_content"
+            android:gravity="right">
+
+            <RelativeLayout
+                android:id="@+id/send_relative1"
+                android:layout_width="wrap_content"
+                android:background="@drawable/send_msg_box"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:id="@+id/chat_send_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="7dp"
+                    android:paddingBottom="7dp"
+                    android:text="hello"
+                    android:textColor="@color/Black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:text="time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_alignTop="@+id/chat_send_text"
+                    android:layout_toRightOf="@+id/chat_send_text"
+                    android:id="@+id/chat_send_time" />
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/read"
+                    android:id="@+id/chat_read_img"
+                    android:visibility="gone"
+                    android:layout_below="@+id/chat_send_time"
+                    android:layout_toRightOf="@+id/chat_send_text"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/recieve_relative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="8dp"
+            android:visibility="visible"
+            android:gravity="left">
+
+
+            <RelativeLayout
+                android:id="@+id/recieve_relative1"
+                android:layout_width="wrap_content"
+                android:background="@drawable/recive_msg_box"
+                android:layout_height="wrap_content"
+
+                >
+                <TextView
+                    android:id="@+id/chat_reciev_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="7dp"
+                    android:paddingBottom="7dp"
+                    android:text="Hi Priyanka"
+                    android:textColor="@color/Black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:text="01/03/2004"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/chat_reciev_text"
+                    android:layout_alignTop="@+id/chat_reciev_text"
+                    android:id="@+id/chat_receive_time" />
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

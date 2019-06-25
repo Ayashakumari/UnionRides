@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cadllMain"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/headerpost" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="50dp"
+            android:layout_marginTop="50dp"
+            android:isScrollContainer="false">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/post"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:orientation="vertical">
+
+                        <com.soundcloud.android.crop.CropImageViewRide
+                            android:id="@+id/crop_image"
+                            android:layout_width="match_parent"
+                            android:layout_height="400dp"
+                            android:background="@drawable/crop__texture"
+                            android:scaleType="fitXY"
+                            android:visibility="gone" />
+
+                        <com.soundcloud.android.crop.SquareImageView
+                            android:id="@+id/image"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/cross"></com.soundcloud.android.crop.SquareImageView>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="visible"
+    android:layout_below="@+id/crop_image">
+
+                        <EditText
+                            android:id="@+id/edt_comment"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Enter Description"
+                            android:textSize="20dp"
+                            android:background="@null"
+
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="15dp"
+                            android:layout_marginLeft="10dp"
+
+                            android:padding="10dp"
+                            android:scrollbars="vertical"
+                            android:text=""
+                            android:maxLength="250"
+                            />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="130dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentRight="true"
+        android:text="250 characters left"
+
+        android:id="@+id/maxchar"/>
+</RelativeLayout>
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+      <Button
+          android:layout_width="match_parent"
+          android:layout_height="50dp"
+          android:background="@drawable/black"
+          android:text="Post My First Ride"
+          android:textAllCaps="false"
+          android:textColor="#ffffff"
+          android:id="@+id/btn_done"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

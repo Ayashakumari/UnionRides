@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context="mx.bigapps.unionrides.Activity.Preview_firstride">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+                      <LinearLayout
+                        android:id="@+id/v"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center">
+
+                        <mx.bigapps.unionrides.Activity.Zoom
+                            android:id="@+id/pager"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            />
+
+
+                        </LinearLayout>
+
+
+           <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+               <ImageView
+                   android:id="@+id/button_Close"
+                   android:layout_width="50dp"
+                   android:layout_height="50dp"
+                   android:layout_alignParentRight="true"
+                   android:layout_marginTop="10dp"
+                   android:background="@drawable/cross" />
+
+
+               <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/button_Close"
+                android:id="@+id/recycler_three"
+                >
+
+               </android.support.v7.widget.RecyclerView>
+
+
+
+        <ProgressBar
+
+            android:id="@+id/progress_first"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="104dp"
+            android:backgroundTint="@color/Black"
+            android:progressDrawable="@drawable/customprogressbar"
+            android:visibility="gone" />
+           </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+    </LinearLayout>

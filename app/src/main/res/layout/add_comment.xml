@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/addcommenttoolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:background="@color/white">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:id="@+id/nocomments"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/type_comments"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentTop="false"
+                android:layout_below="@+id/comments_header"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="60dp"
+                android:gravity="center"
+                android:text="No comments found"
+                android:visibility="gone" />
+        </ScrollView>
+
+        <android.support.v7.widget.RecyclerView
+
+            android:id="@+id/messagesContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/type_comments"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentTop="false"
+            android:layout_below="@+id/comments_header"
+
+            android:divider="@null"
+            android:listSelector="@android:color/transparent"
+            android:transcriptMode="alwaysScroll"
+
+
+            />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/messagesContainer"
+            android:background="#D7D9DA"></View>
+
+
+        <!--    <RelativeLayout
+                android:id="@+id/type_comments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/white">
+
+                <EditText
+                    android:id="@+id/chat_edtext"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_toLeftOf="@+id/chat_send"
+                    android:background="@color/white"
+                    android:hint="Type message"
+                    android:inputType="textCapSentences"
+                    android:paddingLeft="20dp" />
+
+                <ImageView
+                    android:id="@+id/comment_send"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+
+                    android:src="@drawable/send_btn" />
+
+            </RelativeLayout>-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="60dp">
+
+            <include
+                android:id="@+id/chat_tool"
+                layout="@layout/comment_toolbar" />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

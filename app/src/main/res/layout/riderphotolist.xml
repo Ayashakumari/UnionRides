@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/first">
+
+    <RelativeLayout
+        android:id="@+id/rlimage"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            android:layout_height="200dp"
+            android:paddingTop="8dp"
+            android:src="@drawable/loadinguni"
+            />
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:background="@drawable/moreinfo"
+            android:layout_marginTop="30dp"
+            android:layout_alignParentRight="true"
+            android:text="More info"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:paddingTop="5dp"
+            android:id="@+id/more_info"/>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:id="@+id/footer"
+            android:visibility="visible">
+
+
+            <ImageView
+                android:id="@+id/delete"
+                android:layout_width="22dp"
+                android:layout_height="26dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="1dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/delete" />
+
+
+            <ImageView
+                android:id="@+id/star"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignRight="@+id/delete"
+                android:layout_marginBottom="2dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/star"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_settings"
+        android:checked="true"
+        android:title="Profile"
+        app:showAsAction="ifRoom|collapseActionView"/>
+
+
+    <item
+        android:id="@+id/nav_home"
+        android:checked="true"
+
+        android:title="Share app"
+        app:showAsAction="ifRoom|collapseActionView"/>
+    <item
+        android:id="@+id/forgetPassword"
+        android:checked="true"
+        android:title="Forget Password"
+        app:showAsAction="ifRoom|collapseActionView"/>
+    <item
+        android:id="@+id/nav_logout"
+        android:checked="true"
+        android:title="Log Out"
+        app:showAsAction="ifRoom|collapseActionView"/>
+</menu>
